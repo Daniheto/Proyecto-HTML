@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+$theme-colors: (
+  "primary": green,
+);
+$border-radius: 1.5rem;
+$btn-font-family: "josefine sans";
+
+$theme-colors: (
+  "primary": #7a52b0,
+  "secondary": purple,
+  "dark": #3a5795,
+  "info": #55acee,
+  "warning": #f58529,
+  "danger": red,
+);
+$redes: (
+  dark: #3a5795,
+  info: #55acee,
+  warning: pink,
+  danger: red,
+);
+@each $red, $color in $redes {
+  .btn--#{$red} {
+    background-color: $color;
+  }
+}
+$spacer: 5rem;
+
+@mixin sizes($width, $heigth) {
+  height: $heigth;
+  width: $width;
+}
+.img {
+  @include sizes(60rem, 30rem);
+}
+.imagenes {
+  @include sizes(20rem, 20rem);
+}
+.logos {
+  @include sizes(2rem, 2rem);
+}
+
+@mixin font($font-family, $color, $list-style, $font-weight, $font-size) {
+  font-family: $font-family;
+  color: $color;
+  list-style: $list-style;
+  font-weight: $font-weight;
+  font-size: $font-size;
+}
+.item {
+  @include font("josefin sans", rgb(49, 25, 73), none, 700, 1rem);
+}
+.item-1 {
+  @include font("josefin sans", rgb(49, 25, 73), none, 700, 1rem);
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+$card-border-color: rgba($primary, 1);
