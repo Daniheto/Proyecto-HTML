@@ -22924,5 +22924,12 @@ textarea.form-control-lg {
 }
 /*estilos de cada pagina */
 /* por ahora las paginas comparten el mismo estilo */
+.error {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 /*# sourceMappingURL=style.css.map */
