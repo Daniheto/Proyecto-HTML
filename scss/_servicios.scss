@@ -1,0 +1,380 @@
+.display-2--servicios {
+  font-family: "Cormorant", serif;
+  font-weight: 138;
+  font-size: 5rem;
+  color: white;
+}
+.display-2--servicios1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 36rem;
+  font-size: 1.4rem;
+  color: white;
+}
+.display-2--servicios2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 27rem;
+  font-size: 1.3rem;
+  color: white;
+}
+.display-2--servicios3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 21rem;
+  font-size: 1rem;
+  color: white;
+}
+.display-2--servicios4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 21;
+  font-size: 1.1rem;
+  color: white;
+  text-align: left;
+}
+.display-2--servicios5 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 27rem;
+  font-size: 1rem;
+  color: white;
+}
+
+.display-2--servicios6 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 21;
+  font-size: 0.9rem;
+  color: white;
+  text-align: left;
+}
+.display-2--servicios7 {
+  font-family: "Cormorant", serif;
+  font-weight: 138;
+  font-size: 5rem;
+  color: white;
+}
+.gatoMesa {
+  height: 30rem;
+  width: 50rem;
+  align-items: center;
+  text-align-last: center;
+}
+.cisne {
+  height: 25rem;
+  width: 40rem;
+  align-items: center;
+  text-align-last: center;
+}
+.principito {
+  height: 25rem;
+  width: 40rem;
+  align-items: center;
+  text-align-last: center;
+  margin-top: 2rem;
+}
+.calcifer {
+  height: 25rem;
+  width: 40rem;
+  align-items: center;
+  text-align-last: center;
+  margin-top: 2rem;
+}
+.pataGato {
+  height: 25rem;
+  width: 40rem;
+  align-items: initial;
+  margin-top: 2rem;
+  padding-right: 1%;
+}
+.infografia {
+  align-items: center;
+  text-align-last: center;
+}
+.infografia1 {
+  height: 40rem;
+  width: 40rem;
+  align-items: center;
+  text-align-last: center;
+  margin-top: 6rem;
+}
+.septimazo {
+  height: 35rem;
+  width: 40rem;
+  align-items: center;
+  text-align-last: center;
+  margin-top: 2rem;
+}
+.articulos {
+  height: 30rem;
+  width: 40rem;
+  align-items: center;
+  text-align-last: center;
+  margin-top: 2rem;
+}
+.personajes {
+  height: 40rem;
+  width: 43rem;
+  text-align-last: right;
+  margin-top: 2rem;
+  margin-right: 10%;
+}
+.tecnicaTipografia {
+  height: 40rem;
+  width: 40rem;
+  align-items: center;
+  text-align-last: center;
+}
+.campana {
+  height: 35rem;
+  width: 30rem;
+  align-items: center;
+  text-align-last: center;
+  margin-top: 2rem;
+}
+.arborea {
+  height: 40rem;
+  width: 43rem;
+  align-items: center;
+  text-align-last: center;
+  margin-top: 2rem;
+}
+.gridItemServicios {
+  text-align-last: left;
+}
+.gridItemServicios1 {
+  text-align-last: right;
+}
+.gridItemServicios2 {
+  text-align-last: left;
+}
+.gridItemServicios3 {
+  text-align-last: left;
+  margin-top: 6rem;
+}
+@media (min-width: 1100px) {
+  .display-2--servicios {
+    font-size: 5rem;
+  }
+  .display-2--servicios1 {
+    font-size: 1.4rem;
+  }
+  .display-2--servicios2 {
+    font-size: 1.3rem;
+  }
+  .display-2--servicios3 {
+    font-size: 1rem;
+  }
+  .display-2--servicios4 {
+    font-size: 1.1rem;
+  }
+  .display-2--servicios5 {
+    font-size: 1rem;
+  }
+  .display-2--servicios6 {
+    font-size: 0.9rem;
+  }
+  .display-2--servicios7 {
+    font-size: 5rem;
+  }
+  .gatoMesa {
+    height: 30rem;
+    width: 50rem;
+  }
+  .cisne {
+    height: 25rem;
+    width: 40rem;
+  }
+  .principito {
+    height: 25rem;
+    width: 40rem;
+  }
+  .calcifer {
+    height: 25rem;
+    width: 40rem;
+  }
+  .pataGato {
+    height: 25rem;
+    width: 40rem;
+  }
+
+  .infografia1 {
+    height: 40rem;
+    width: 40rem;
+  }
+  .septimazo {
+    height: 35rem;
+    width: 40rem;
+  }
+  .articulos {
+    height: 30rem;
+    width: 40rem;
+  }
+  .personajes {
+    height: 40rem;
+    width: 43rem;
+  }
+  .tecnicaTipografia {
+    height: 40rem;
+    width: 40rem;
+  }
+  .campana {
+    height: 35rem;
+    width: 30rem;
+  }
+  .arborea {
+    height: 40rem;
+    width: 43rem;
+  }
+}
+@media (max-width: 1099px) {
+  .display-2--servicios {
+    font-size: 2.5rem;
+  }
+  .display-2--servicios1 {
+    font-size: 1.2rem;
+  }
+  .display-2--servicios2 {
+    font-size: 1rem;
+  }
+  .display-2--servicios3 {
+    font-size: 1rem;
+  }
+  .display-2--servicios4 {
+    font-size: 1rem;
+  }
+  .display-2--servicios5 {
+    font-size: 1rem;
+  }
+  .display-2--servicios6 {
+    font-size: 1rem;
+  }
+  .display-2--servicios7 {
+    font-size: 2.5rem;
+  }
+  .gatoMesa {
+    height: 15rem;
+    width: 25rem;
+  }
+  .cisne {
+    height: 12rem;
+    width: 20rem;
+  }
+  .principito {
+    height: 12rem;
+    width: 20rem;
+  }
+  .calcifer {
+    height: 12rem;
+    width: 20rem;
+  }
+  .pataGato {
+    height: 12rem;
+    width: 20rem;
+  }
+  .infografia {
+    height: 20rem;
+    width: 23rem;
+  }
+  .infografia1 {
+    height: 20rem;
+    width: 20rem;
+  }
+  .septimazo {
+    height: 18rem;
+    width: 20rem;
+  }
+  .articulos {
+    height: 15rem;
+    width: 20rem;
+  }
+  .personajes {
+    height: 20rem;
+    width: 23rem;
+  }
+  .tecnicaTipografia {
+    height: 20rem;
+    width: 20rem;
+  }
+  .campana {
+    height: 17rem;
+    width: 15rem;
+  }
+  .arborea {
+    height: 20rem;
+    width: 23rem;
+  }
+}
+@media (max-width: 768px) {
+  .display-2--servicios {
+    font-size: 2.5rem;
+  }
+  .display-2--servicios1 {
+    font-size: 1.2rem;
+  }
+  .display-2--servicios2 {
+    font-size: 1rem;
+  }
+  .display-2--servicios3 {
+    font-size: 1rem;
+  }
+  .display-2--servicios4 {
+    font-size: 1rem;
+  }
+  .display-2--servicios5 {
+    font-size: 1rem;
+  }
+  .display-2--servicios6 {
+    font-size: 1rem;
+  }
+  .display-2--servicios7 {
+    font-size: 2.5rem;
+  }
+  .gatoMesa {
+    height: 15rem;
+    width: 25rem;
+  }
+  .cisne {
+    height: 12rem;
+    width: 20rem;
+  }
+  .principito {
+    height: 12rem;
+    width: 20rem;
+  }
+  .calcifer {
+    height: 12rem;
+    width: 20rem;
+  }
+  .pataGato {
+    height: 12rem;
+    width: 20rem;
+  }
+  .infografia {
+    height: 20rem;
+    width: 23rem;
+  }
+  .infografia1 {
+    height: 20rem;
+    width: 20rem;
+  }
+  .septimazo {
+    height: 18rem;
+    width: 20rem;
+  }
+  .articulos {
+    height: 15rem;
+    width: 20rem;
+  }
+  .personajes {
+    height: 20rem;
+    width: 23rem;
+  }
+  .tecnicaTipografia {
+    height: 20rem;
+    width: 20rem;
+  }
+  .campana {
+    height: 17rem;
+    width: 15rem;
+  }
+  .arborea {
+    height: 20rem;
+    width: 23rem;
+  }
+}

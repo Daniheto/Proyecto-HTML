@@ -1,0 +1,134 @@
+.colorContacto {
+  background-image: linear-gradient(
+    to right,
+    #02dcf0,
+    #00b8f5,
+    #0091f8,
+    #0065ea,
+    #1429c4
+  );
+}
+.navbar2 {
+  background-image: linear-gradient(
+    to right,
+    #02dcf0,
+    #00b8f5,
+    #0091f8,
+    #0065ea,
+    #1429c4
+  );
+  position: relative;
+  display: flex;
+  flex-wrap: wrap; // allow us to do the line break for collapsing content
+  align-items: center;
+  justify-content: space-between; // space out brand from logo
+  padding-top: $navbar-padding-y;
+  padding-right: $navbar-padding-x; // default: null
+  padding-bottom: $navbar-padding-y;
+  padding-left: $navbar-padding-x; // default: null
+  @include gradient-bg();
+}
+.display-2--contacto {
+  font-family: "Cormorant", serif;
+  font-weight: 188;
+  font-size: 6rem;
+  color: white;
+}
+.display-2--contacto1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 36;
+  font-size: 1.6rem;
+  color: white;
+}
+.display-2--contacto2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 22;
+  font-size: 1.4rem;
+  color: white;
+}
+.gridItemContacto {
+  text-align-last: right;
+  padding-right: 1rem;
+}
+.linkContacto {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 22;
+  font-size: 1.4rem;
+  color: white;
+}
+.gatoObservando {
+  height: 20rem;
+  width: 40rem;
+}
+@media (min-width: 1100px) {
+  .gatoObservando {
+    height: 20rem;
+    width: 40rem;
+  }
+  .display-2--contacto {
+    font-weight: 188;
+    font-size: 6rem;
+  }
+  .display-2--contacto1 {
+    font-weight: 36;
+    font-size: 1.6rem;
+  }
+  .display-2--contacto2 {
+    font-weight: 22;
+    font-size: 1.4rem;
+  }
+  .linkContacto {
+    font-weight: 22;
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 1099px) {
+  .gatoObservando {
+    height: 10rem;
+    width: 30rem;
+  }
+  .display-2--contacto {
+    font-weight: 188;
+    font-size: 3rem;
+  }
+  .display-2--contacto1 {
+    font-weight: 36;
+    font-size: 1.3rem;
+  }
+  .display-2--contacto2 {
+    font-weight: 22;
+    font-size: 1rem;
+  }
+  .linkContacto {
+    font-weight: 22;
+    font-size: 1.2rem;
+  }
+  .nav-link3 {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 768px) {
+  .gatoObservando {
+    height: 6rem;
+    width: 16rem;
+  }
+  .display-2--contacto {
+    font-weight: 188;
+    font-size: 1.5rem;
+  }
+  .display-2--contacto1 {
+    font-weight: 36rem;
+    font-size: 1rem;
+  }
+  .display-2--contacto2 {
+    font-weight: 22;
+    font-size: 0.6rem;
+  }
+  .linkContacto {
+    font-weight: 22;
+    font-size: 0.8rem;
+  }
+  .nav-link3 {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,82 @@
+.colorInicio {
+  background-image: linear-gradient(
+    to right bottom,
+    #06e2f6,
+    #00d3ff,
+    #00c1ff,
+    #52adff,
+    #8795f9
+  );
+}
+.logoInicio {
+  align-items: center;
+  padding-left: 112px;
+}
+.navbar {
+  background-image: linear-gradient(
+    to right bottom,
+    #02dcf0,
+    #02dcf0,
+    #02dcf0,
+    #02dcf0,
+    #02dcf0
+  );
+}
+.imgInicio {
+  height: 10rem;
+  width: 20rem;
+}
+.portada {
+  height: 40rem;
+  width: 60rem;
+}
+@media (min-width: 1100px) {
+  .imgInicio {
+    height: 10rem;
+    width: 20rem;
+  }
+  .portada {
+    height: 40rem;
+    width: 60rem;
+  }
+}
+@media (max-width: 1099px) {
+  .imgInicio {
+    height: 10rem;
+    width: 20rem;
+  }
+  .portada {
+    height: 15rem;
+    width: 25rem;
+  }
+  .nav-link1 {
+    font-size: 0.8rem;
+  }
+  .nav-link2 {
+    font-size: 0.8rem;
+  }
+  .row,
+  .col {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .imgInicio {
+    height: 6rem;
+    width: 12rem;
+  }
+  .portada {
+    height: 8rem;
+    width: 14rem;
+  }
+  .row,
+  .col {
+    flex-direction: column;
+  }
+  .nav-link1 {
+    font-size: 1rem;
+  }
+  .nav-link2 {
+    font-size: 1rem;
+  }
+}

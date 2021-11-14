@@ -1,0 +1,57 @@
+.display-2--galeria {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 36rem;
+  font-size: 1.6rem;
+  color: white;
+}
+.galeria1 {
+  width: 1100;
+  height: 500;
+}
+.galeria2 {
+  width: 1100;
+  height: 500;
+}
+.galeria3 {
+  width: 1100;
+  height: 500;
+}
+@media (min-width: 1100px) {
+  .display-2--galeria {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 1099px) {
+  .display-2--galeria {
+    font-size: 1.4rem;
+  }
+  .galeria1 {
+    width: 40rem;
+    height: 20rem;
+  }
+  .galeria2 {
+    width: 40rem;
+    height: 20rem;
+  }
+  .galeria3 {
+    width: 40rem;
+    height: 20rem;
+  }
+}
+@media (max-width: 768px) {
+  .display-2--galeria {
+    font-size: 1rem;
+  }
+  .galeria1 {
+    width: 24rem;
+    height: 20rem;
+  }
+  .galeria2 {
+    width: 24rem;
+    height: 20rem;
+  }
+  .galeria3 {
+    width: 24rem;
+    height: 20rem;
+  }
+}

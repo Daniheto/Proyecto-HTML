@@ -9,33 +9,29 @@
     #00ffff
   );
 }
-.card {
-  background-image: linear-gradient(
-    to right top,
-    #d5e9e9,
-    #baefef,
-    #99f5f5,
-    #6efafa,
-    #00ffff
-  );
-}
-$margin: 80px;
-.nav-link {
-  font-family: "Elsie Swash Caps", cursive;
-  color: rgb(232, 238, 233);
+
+.nav-link1 {
+  font-family: "Josefin Sans", sans-serif;
+  color: red;
   text-transform: uppercase;
-  font-weight: 600;
-  margin: $margin/2;
+  font-weight: 350;
+  margin: 60px;
   text-decoration: none;
-}
-.lista {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none;
   align-items: center;
-  justify-content: start;
+  display: inline-block;
 }
+.nav-link2 {
+  font-family: "Josefin Sans", sans-serif;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 350;
+  margin: 60px;
+  text-decoration: none;
+  align-items: center;
+  display: inline-block;
+  padding-right: 2rem;
+}
+
 .nav-item {
   display: inline-block;
   position: relative;
@@ -76,12 +72,7 @@ $margin: 80px;
     #02dcf0
   );
 }
-.nav-link:hover {
-  background-color: #fc3d4f;
-  border: 2px solid rgb(34, 30, 30);
-  color: white;
-  font-family: cursive;
-}
+
 .row {
   display: flex;
   justify-content: center;
@@ -94,41 +85,6 @@ $margin: 80px;
   align-items: center;
   text-align: center;
 }
-.header {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.699);
-  position: sticky;
-  top: 0;
-  z-index: 1;
-}
-
-/* estilos de la seccion principal*/
-.display-2 {
-  text-transform: capitalize;
-}
-.display-2--intro {
-  font-family: "Elsie Swash Caps", cursive;
-  font-weight: 700;
-  font-size: 1rem;
-  color: #fc3d4f;
-}
-.display-2--description {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 1rem;
-  color: rgb(49, 25, 73);
-  animation-name: efecto;
-  animation-iteration-count: infinite;
-  animation-delay: initial;
-  animation-duration: 2s;
-}
-
-.redesSociales {
-  font-family: "Josefin Sans", sans-serif;
-  color: rgb(49, 25, 73);
-  font-size: 1rem;
-}
-.tabla {
-  margin: 8%;
-}
 
 /* container */
 .container {
@@ -136,86 +92,18 @@ $margin: 80px;
   margin: 0 auto;
   max-width: 1100px;
 }
-/* Grid */
-.contenedor {
-  border: 3px solid;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-column-gap: 2%;
-  grid-row-gap: 40px;
-}
-.grid {
-  background-color: #1429c4;
-  border: 1px solid #db0d65;
-  color: white;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 1rem;
-  text-align: center;
-}
-/* estilos footer */
-.displayFooter {
-  font-family: "Elsie Swash Caps", cursive;
-  color: #ffad0a;
-  font-weight: 700;
-  font-size: 1rem;
-  animation-name: efecto;
-  animation-iteration-count: infinite;
-  animation-delay: initial;
-  animation-duration: 2s;
-}
-.displayFooter-1 {
-  font-family: "Josefin Sans", sans-serif;
-  color: white;
-  font-weight: 700;
-  font-size: 1rem;
-}
 
-.footer {
-  background-image: linear-gradient(
-    to right top,
-    #021027,
-    #001a44,
-    #002163,
-    #002781,
-    #002a9e,
-    #043db7,
-    #0551d0,
-    #0065ea,
-    #008afc,
-    #00a8ff,
-    #00c4f9,
-    #02dcf0
-  );
-}
-
-@keyframes efecto {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    color: rgb(158, 0, 0);
-  }
-}
-
-/* Media Queries */
+/* Media Queries 
 @media (min-width: 1100px) {
   .display-2--intro {
     font-size: 3rem;
   }
-  .displayFooter {
-    font-size: 3rem;
-  }
-  .displayFooter-1 {
-    font-size: 1.3rem;
-  }
+  
+  
   .display-2--description {
     font-size: 1.3rem;
   }
-  .redesSociales {
-    font-size: 1.5rem;
-  }
+  
   .item {
     font-size: 1.5rem;
   }
@@ -272,6 +160,4 @@ $margin: 80px;
     align-items: flex-start;
   }
 }
-
-/*estilos de cada pagina */
-/* por ahora las paginas comparten el mismo estilo */
+*/

@@ -22678,26 +22678,27 @@ textarea.form-control-lg {
   background-image: linear-gradient(to right top, #d5e9e9, #baefef, #99f5f5, #6efafa, #00ffff);
 }
 
-.card {
-  background-image: linear-gradient(to right top, #d5e9e9, #baefef, #99f5f5, #6efafa, #00ffff);
-}
-
-.nav-link {
-  font-family: "Elsie Swash Caps", cursive;
-  color: #e8eee9;
+.nav-link1 {
+  font-family: "Josefin Sans", sans-serif;
+  color: red;
   text-transform: uppercase;
-  font-weight: 600;
-  margin: 40px;
+  font-weight: 350;
+  margin: 60px;
   text-decoration: none;
+  align-items: center;
+  display: inline-block;
 }
 
-.lista {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.nav-link2 {
+  font-family: "Josefin Sans", sans-serif;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 350;
+  margin: 60px;
+  text-decoration: none;
   align-items: center;
-  justify-content: start;
+  display: inline-block;
+  padding-right: 2rem;
 }
 
 .nav-item {
@@ -22715,13 +22716,6 @@ textarea.form-control-lg {
   background-image: linear-gradient(to right top, #021027, #001a44, #002163, #002781, #002a9e, #043db7, #0551d0, #0065ea, #008afc, #00a8ff, #00c4f9, #02dcf0);
 }
 
-.nav-link:hover {
-  background-color: #fc3d4f;
-  border: 2px solid #221e1e;
-  color: white;
-  font-family: cursive;
-}
-
 .row {
   display: flex;
   justify-content: center;
@@ -22735,45 +22729,6 @@ textarea.form-control-lg {
   text-align: center;
 }
 
-.header {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.699);
-  position: sticky;
-  top: 0;
-  z-index: 1;
-}
-
-/* estilos de la seccion principal*/
-.display-2 {
-  text-transform: capitalize;
-}
-
-.display-2--intro {
-  font-family: "Elsie Swash Caps", cursive;
-  font-weight: 700;
-  font-size: 1rem;
-  color: #fc3d4f;
-}
-
-.display-2--description {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 1rem;
-  color: #311949;
-  animation-name: efecto;
-  animation-iteration-count: infinite;
-  animation-delay: initial;
-  animation-duration: 2s;
-}
-
-.redesSociales {
-  font-family: "Josefin Sans", sans-serif;
-  color: #311949;
-  font-size: 1rem;
-}
-
-.tabla {
-  margin: 8%;
-}
-
 /* container */
 .container {
   width: 80%;
@@ -22781,87 +22736,23 @@ textarea.form-control-lg {
   max-width: 1100px;
 }
 
-/* Grid */
-.contenedor {
-  border: 3px solid;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-column-gap: 2%;
-  grid-row-gap: 40px;
-}
-
-.grid {
-  background-color: #1429c4;
-  border: 1px solid #db0d65;
-  color: white;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 1rem;
-  text-align: center;
-}
-
-/* estilos footer */
-.displayFooter {
-  font-family: "Elsie Swash Caps", cursive;
-  color: #ffad0a;
-  font-weight: 700;
-  font-size: 1rem;
-  animation-name: efecto;
-  animation-iteration-count: infinite;
-  animation-delay: initial;
-  animation-duration: 2s;
-}
-
-.displayFooter-1 {
-  font-family: "Josefin Sans", sans-serif;
-  color: white;
-  font-weight: 700;
-  font-size: 1rem;
-}
-
-.footer {
-  background-image: linear-gradient(to right top, #021027, #001a44, #002163, #002781, #002a9e, #043db7, #0551d0, #0065ea, #008afc, #00a8ff, #00c4f9, #02dcf0);
-}
-
-@keyframes efecto {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    color: #9e0000;
-  }
-}
-/* Media Queries */
+/* Media Queries 
 @media (min-width: 1100px) {
   .display-2--intro {
     font-size: 3rem;
   }
 
-  .displayFooter {
-    font-size: 3rem;
-  }
-
-  .displayFooter-1 {
-    font-size: 1.3rem;
-  }
 
   .display-2--description {
     font-size: 1.3rem;
   }
 
-  .redesSociales {
-    font-size: 1.5rem;
-  }
-
   .item {
     font-size: 1.5rem;
   }
-
   .item-1 {
     font-size: 1.5rem;
   }
-
   .grid {
     font-size: 1rem;
   }
@@ -22870,28 +22761,21 @@ textarea.form-control-lg {
   .grid {
     font-size: 0.8rem;
   }
-
   .row,
-.menu,
-.lista {
+  .menu,
+  .lista {
     flex-direction: column;
   }
-
   .display-2,
-.display-2--description {
+  .display-2--description {
     width: 100%;
   }
-
   .img {
-    height: 10rem;
-    width: 20rem;
+    @include sizes(20rem, 10rem);
   }
-
   .imagenes {
-    height: 5rem;
-    width: 5rem;
+    @include sizes(5rem, 5rem);
   }
-
   .divOne {
     width: 5rem;
     height: 5rem;
@@ -22904,32 +22788,1158 @@ textarea.form-control-lg {
     width: 6rem;
     height: 6rem;
   }
-
   .row,
-.menu,
-.lista {
+  .menu,
+  .lista {
     flex-direction: column;
   }
-
   .divOne:hover {
     width: 3rem;
     height: 3rem;
     padding: 3rem;
   }
-
-  .btn-sm, .btn-group-sm > .btn {
+  .btn-sm {
     flex-direction: column;
     align-items: flex-start;
   }
 }
-/*estilos de cada pagina */
-/* por ahora las paginas comparten el mismo estilo */
+*/
 .error {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.colorInicio {
+  background-image: linear-gradient(to right bottom, #06e2f6, #00d3ff, #00c1ff, #52adff, #8795f9);
+}
+
+.logoInicio {
+  align-items: center;
+  padding-left: 112px;
+}
+
+.navbar {
+  background-image: linear-gradient(to right bottom, #02dcf0, #02dcf0, #02dcf0, #02dcf0, #02dcf0);
+}
+
+.imgInicio {
+  height: 10rem;
+  width: 20rem;
+}
+
+.portada {
+  height: 40rem;
+  width: 60rem;
+}
+
+@media (min-width: 1100px) {
+  .imgInicio {
+    height: 10rem;
+    width: 20rem;
+  }
+
+  .portada {
+    height: 40rem;
+    width: 60rem;
+  }
+}
+@media (max-width: 1099px) {
+  .imgInicio {
+    height: 10rem;
+    width: 20rem;
+  }
+
+  .portada {
+    height: 15rem;
+    width: 25rem;
+  }
+
+  .nav-link1 {
+    font-size: 0.8rem;
+  }
+
+  .nav-link2 {
+    font-size: 0.8rem;
+  }
+
+  .row,
+.col {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .imgInicio {
+    height: 6rem;
+    width: 12rem;
+  }
+
+  .portada {
+    height: 8rem;
+    width: 14rem;
+  }
+
+  .row,
+.col {
+    flex-direction: column;
+  }
+
+  .nav-link1 {
+    font-size: 1rem;
+  }
+
+  .nav-link2 {
+    font-size: 1rem;
+  }
+}
+.colorHistoria {
+  background-image: linear-gradient(to right top, #06142a, #01193b, #001c4b, #041f5c, #15206b);
+}
+
+.navbar1 {
+  background-image: linear-gradient(to right top, #06142a, #01193b, #001c4b, #041f5c, #15206b);
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.logoHistoria {
+  align-items: center;
+  padding-left: 11px;
+  display: flexbox;
+}
+
+.nav-link3 {
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 23;
+  margin: 60px;
+  text-decoration: none;
+  align-items: center;
+  display: inline-block;
+  padding-right: 2rem;
+}
+
+.display-2--historia {
+  font-family: "Elsie Swash Caps", cursive;
+  font-weight: 700;
+  font-size: 5rem;
+  color: white;
+}
+
+.display-2--historia1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 48;
+  font-size: 3rem;
+  color: white;
+}
+
+.display-2--historia2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 30;
+  font-size: 1rem;
+  color: white;
+}
+
+.display-2--historia3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 42;
+  font-size: 3rem;
+  color: white;
+}
+
+.display-2--historia4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 42;
+  font-size: 2rem;
+  color: white;
+}
+
+.display-2--historia5 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 42;
+  font-size: 2rem;
+  color: white;
+  align-items: center;
+  padding-left: 15%;
+}
+
+.display-2--historia6 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 42;
+  font-size: 2rem;
+  color: white;
+  align-items: center;
+  padding-left: 25%;
+}
+
+.display-2--historia7 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 42;
+  font-size: 2rem;
+  color: white;
+  align-items: center;
+  padding-left: 35%;
+}
+
+.display-2--historia8 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 42;
+  font-size: 2rem;
+  color: white;
+  align-items: center;
+}
+
+.display-2--historia9 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 24;
+  font-size: 0.8rem;
+  color: white;
+  text-align: center;
+}
+
+.display-2--historia10 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 24;
+  font-size: 0.8rem;
+  color: white;
+  text-align: center;
+}
+
+.foto {
+  height: 400px;
+  width: 400px;
+  border-radius: 200px;
+}
+
+.gatoAgazapado {
+  height: 20rem;
+  width: 40rem;
+}
+
+.gatoVentana {
+  height: 40rem;
+  width: 60rem;
+}
+
+.repisa {
+  height: 12rem;
+  width: 32rem;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 2%;
+  grid-row-gap: 40px;
+}
+
+.gridItem1 {
+  align-items: initial;
+  margin-left: 1rem;
+}
+
+.gridItem2 {
+  text-align-last: right;
+  padding-right: 1rem;
+}
+
+.gridItem3 {
+  padding-left: initial;
+  padding-top: 1rem;
+}
+
+.gridItem4 {
+  text-align-last: right;
+  padding-right: 1rem;
+}
+
+.gridItem7 {
+  align-items: center;
+}
+
+.gridItem9 {
+  text-align-last: right;
+}
+
+.gridItem10 {
+  padding-left: initial;
+  padding-top: 1rem;
+}
+
+@media (min-width: 1100px) {
+  .display-2--historia {
+    font-size: 5rem;
+  }
+
+  .display-2--historia1 {
+    font-size: 3rem;
+  }
+
+  .display-2--historia2 {
+    font-size: 1rem;
+  }
+
+  .display-2--historia3 {
+    font-size: 3rem;
+  }
+
+  .display-2--historia4 {
+    font-size: 2rem;
+  }
+
+  .display-2--historia5 {
+    font-size: 2rem;
+  }
+
+  .display-2--historia6 {
+    font-size: 2rem;
+  }
+
+  .display-2--historia7 {
+    font-size: 2rem;
+  }
+
+  .display-2--historia8 {
+    font-size: 2rem;
+  }
+
+  .display-2--historia9 {
+    font-size: 0.8rem;
+  }
+
+  .display-2--historia10 {
+    font-size: 0.8rem;
+  }
+
+  .foto {
+    height: 400px;
+    width: 400px;
+    border-radius: 200px;
+  }
+
+  .gatoAgazapado {
+    height: 20rem;
+    width: 40rem;
+  }
+
+  .gatoVentana {
+    height: 40rem;
+    width: 60rem;
+  }
+
+  .repisa {
+    height: 12rem;
+    width: 32rem;
+  }
+}
+@media (max-width: 1099px) {
+  .display-2--historia {
+    font-size: 2.5rem;
+  }
+
+  .display-2--historia1 {
+    font-size: 1.5rem;
+  }
+
+  .display-2--historia2 {
+    font-size: 0.8rem;
+  }
+
+  .display-2--historia3 {
+    font-size: 1.5rem;
+  }
+
+  .display-2--historia4 {
+    font-size: 1rem;
+  }
+
+  .display-2--historia5 {
+    font-size: 1rem;
+  }
+
+  .display-2--historia6 {
+    font-size: 1rem;
+  }
+
+  .display-2--historia7 {
+    font-size: 1rem;
+  }
+
+  .display-2--historia8 {
+    font-size: 1rem;
+  }
+
+  .display-2--historia9 {
+    font-size: 0.8rem;
+  }
+
+  .display-2--historia10 {
+    font-size: 0.8rem;
+  }
+
+  .foto {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+  }
+
+  .gatoAgazapado {
+    height: 10rem;
+    width: 20rem;
+  }
+
+  .gatoVentana {
+    height: 18rem;
+    width: 28rem;
+  }
+
+  .repisa {
+    height: 8rem;
+    width: 20rem;
+  }
+}
+@media (max-width: 768px) {
+  .display-2--historia {
+    font-size: 2.5rem;
+  }
+
+  .display-2--historia1 {
+    font-size: 1.5rem;
+  }
+
+  .display-2--historia2 {
+    font-size: 0.8rem;
+  }
+
+  .display-2--historia3 {
+    font-size: 1.5rem;
+  }
+
+  .display-2--historia4 {
+    font-size: 1rem;
+  }
+
+  .display-2--historia5 {
+    font-size: 1rem;
+  }
+
+  .display-2--historia6 {
+    font-size: 1rem;
+  }
+
+  .display-2--historia7 {
+    font-size: 1rem;
+  }
+
+  .display-2--historia8 {
+    font-size: 1rem;
+  }
+
+  .display-2--historia9 {
+    font-size: 0.8rem;
+  }
+
+  .display-2--historia10 {
+    font-size: 0.8rem;
+  }
+
+  .foto {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+  }
+
+  .gatoAgazapado {
+    height: 10rem;
+    width: 20rem;
+  }
+
+  .gatoVentana {
+    height: 16rem;
+    width: 26rem;
+  }
+
+  .repisa {
+    height: 10rem;
+    width: 30rem;
+  }
+}
+.display-2--servicios {
+  font-family: "Cormorant", serif;
+  font-weight: 138;
+  font-size: 5rem;
+  color: white;
+}
+
+.display-2--servicios1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 36rem;
+  font-size: 1.4rem;
+  color: white;
+}
+
+.display-2--servicios2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 27rem;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.display-2--servicios3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 21rem;
+  font-size: 1rem;
+  color: white;
+}
+
+.display-2--servicios4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 21;
+  font-size: 1.1rem;
+  color: white;
+  text-align: left;
+}
+
+.display-2--servicios5 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 27rem;
+  font-size: 1rem;
+  color: white;
+}
+
+.display-2--servicios6 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 21;
+  font-size: 0.9rem;
+  color: white;
+  text-align: left;
+}
+
+.display-2--servicios7 {
+  font-family: "Cormorant", serif;
+  font-weight: 138;
+  font-size: 5rem;
+  color: white;
+}
+
+.gatoMesa {
+  height: 30rem;
+  width: 50rem;
+  align-items: center;
+  text-align-last: center;
+}
+
+.cisne {
+  height: 25rem;
+  width: 40rem;
+  align-items: center;
+  text-align-last: center;
+}
+
+.principito {
+  height: 25rem;
+  width: 40rem;
+  align-items: center;
+  text-align-last: center;
+  margin-top: 2rem;
+}
+
+.calcifer {
+  height: 25rem;
+  width: 40rem;
+  align-items: center;
+  text-align-last: center;
+  margin-top: 2rem;
+}
+
+.pataGato {
+  height: 25rem;
+  width: 40rem;
+  align-items: initial;
+  margin-top: 2rem;
+  padding-right: 1%;
+}
+
+.infografia {
+  align-items: center;
+  text-align-last: center;
+}
+
+.infografia1 {
+  height: 40rem;
+  width: 40rem;
+  align-items: center;
+  text-align-last: center;
+  margin-top: 6rem;
+}
+
+.septimazo {
+  height: 35rem;
+  width: 40rem;
+  align-items: center;
+  text-align-last: center;
+  margin-top: 2rem;
+}
+
+.articulos {
+  height: 30rem;
+  width: 40rem;
+  align-items: center;
+  text-align-last: center;
+  margin-top: 2rem;
+}
+
+.personajes {
+  height: 40rem;
+  width: 43rem;
+  text-align-last: right;
+  margin-top: 2rem;
+  margin-right: 10%;
+}
+
+.tecnicaTipografia {
+  height: 40rem;
+  width: 40rem;
+  align-items: center;
+  text-align-last: center;
+}
+
+.campana {
+  height: 35rem;
+  width: 30rem;
+  align-items: center;
+  text-align-last: center;
+  margin-top: 2rem;
+}
+
+.arborea {
+  height: 40rem;
+  width: 43rem;
+  align-items: center;
+  text-align-last: center;
+  margin-top: 2rem;
+}
+
+.gridItemServicios {
+  text-align-last: left;
+}
+
+.gridItemServicios1 {
+  text-align-last: right;
+}
+
+.gridItemServicios2 {
+  text-align-last: left;
+}
+
+.gridItemServicios3 {
+  text-align-last: left;
+  margin-top: 6rem;
+}
+
+@media (min-width: 1100px) {
+  .display-2--servicios {
+    font-size: 5rem;
+  }
+
+  .display-2--servicios1 {
+    font-size: 1.4rem;
+  }
+
+  .display-2--servicios2 {
+    font-size: 1.3rem;
+  }
+
+  .display-2--servicios3 {
+    font-size: 1rem;
+  }
+
+  .display-2--servicios4 {
+    font-size: 1.1rem;
+  }
+
+  .display-2--servicios5 {
+    font-size: 1rem;
+  }
+
+  .display-2--servicios6 {
+    font-size: 0.9rem;
+  }
+
+  .display-2--servicios7 {
+    font-size: 5rem;
+  }
+
+  .gatoMesa {
+    height: 30rem;
+    width: 50rem;
+  }
+
+  .cisne {
+    height: 25rem;
+    width: 40rem;
+  }
+
+  .principito {
+    height: 25rem;
+    width: 40rem;
+  }
+
+  .calcifer {
+    height: 25rem;
+    width: 40rem;
+  }
+
+  .pataGato {
+    height: 25rem;
+    width: 40rem;
+  }
+
+  .infografia1 {
+    height: 40rem;
+    width: 40rem;
+  }
+
+  .septimazo {
+    height: 35rem;
+    width: 40rem;
+  }
+
+  .articulos {
+    height: 30rem;
+    width: 40rem;
+  }
+
+  .personajes {
+    height: 40rem;
+    width: 43rem;
+  }
+
+  .tecnicaTipografia {
+    height: 40rem;
+    width: 40rem;
+  }
+
+  .campana {
+    height: 35rem;
+    width: 30rem;
+  }
+
+  .arborea {
+    height: 40rem;
+    width: 43rem;
+  }
+}
+@media (max-width: 1099px) {
+  .display-2--servicios {
+    font-size: 2.5rem;
+  }
+
+  .display-2--servicios1 {
+    font-size: 1.2rem;
+  }
+
+  .display-2--servicios2 {
+    font-size: 1rem;
+  }
+
+  .display-2--servicios3 {
+    font-size: 1rem;
+  }
+
+  .display-2--servicios4 {
+    font-size: 1rem;
+  }
+
+  .display-2--servicios5 {
+    font-size: 1rem;
+  }
+
+  .display-2--servicios6 {
+    font-size: 1rem;
+  }
+
+  .display-2--servicios7 {
+    font-size: 2.5rem;
+  }
+
+  .gatoMesa {
+    height: 15rem;
+    width: 25rem;
+  }
+
+  .cisne {
+    height: 12rem;
+    width: 20rem;
+  }
+
+  .principito {
+    height: 12rem;
+    width: 20rem;
+  }
+
+  .calcifer {
+    height: 12rem;
+    width: 20rem;
+  }
+
+  .pataGato {
+    height: 12rem;
+    width: 20rem;
+  }
+
+  .infografia {
+    height: 20rem;
+    width: 23rem;
+  }
+
+  .infografia1 {
+    height: 20rem;
+    width: 20rem;
+  }
+
+  .septimazo {
+    height: 18rem;
+    width: 20rem;
+  }
+
+  .articulos {
+    height: 15rem;
+    width: 20rem;
+  }
+
+  .personajes {
+    height: 20rem;
+    width: 23rem;
+  }
+
+  .tecnicaTipografia {
+    height: 20rem;
+    width: 20rem;
+  }
+
+  .campana {
+    height: 17rem;
+    width: 15rem;
+  }
+
+  .arborea {
+    height: 20rem;
+    width: 23rem;
+  }
+}
+@media (max-width: 768px) {
+  .display-2--servicios {
+    font-size: 2.5rem;
+  }
+
+  .display-2--servicios1 {
+    font-size: 1.2rem;
+  }
+
+  .display-2--servicios2 {
+    font-size: 1rem;
+  }
+
+  .display-2--servicios3 {
+    font-size: 1rem;
+  }
+
+  .display-2--servicios4 {
+    font-size: 1rem;
+  }
+
+  .display-2--servicios5 {
+    font-size: 1rem;
+  }
+
+  .display-2--servicios6 {
+    font-size: 1rem;
+  }
+
+  .display-2--servicios7 {
+    font-size: 2.5rem;
+  }
+
+  .gatoMesa {
+    height: 15rem;
+    width: 25rem;
+  }
+
+  .cisne {
+    height: 12rem;
+    width: 20rem;
+  }
+
+  .principito {
+    height: 12rem;
+    width: 20rem;
+  }
+
+  .calcifer {
+    height: 12rem;
+    width: 20rem;
+  }
+
+  .pataGato {
+    height: 12rem;
+    width: 20rem;
+  }
+
+  .infografia {
+    height: 20rem;
+    width: 23rem;
+  }
+
+  .infografia1 {
+    height: 20rem;
+    width: 20rem;
+  }
+
+  .septimazo {
+    height: 18rem;
+    width: 20rem;
+  }
+
+  .articulos {
+    height: 15rem;
+    width: 20rem;
+  }
+
+  .personajes {
+    height: 20rem;
+    width: 23rem;
+  }
+
+  .tecnicaTipografia {
+    height: 20rem;
+    width: 20rem;
+  }
+
+  .campana {
+    height: 17rem;
+    width: 15rem;
+  }
+
+  .arborea {
+    height: 20rem;
+    width: 23rem;
+  }
+}
+.colorContacto {
+  background-image: linear-gradient(to right, #02dcf0, #00b8f5, #0091f8, #0065ea, #1429c4);
+}
+
+.navbar2 {
+  background-image: linear-gradient(to right, #02dcf0, #00b8f5, #0091f8, #0065ea, #1429c4);
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.display-2--contacto {
+  font-family: "Cormorant", serif;
+  font-weight: 188;
+  font-size: 6rem;
+  color: white;
+}
+
+.display-2--contacto1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 36;
+  font-size: 1.6rem;
+  color: white;
+}
+
+.display-2--contacto2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 22;
+  font-size: 1.4rem;
+  color: white;
+}
+
+.gridItemContacto {
+  text-align-last: right;
+  padding-right: 1rem;
+}
+
+.linkContacto {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 22;
+  font-size: 1.4rem;
+  color: white;
+}
+
+.gatoObservando {
+  height: 20rem;
+  width: 40rem;
+}
+
+@media (min-width: 1100px) {
+  .gatoObservando {
+    height: 20rem;
+    width: 40rem;
+  }
+
+  .display-2--contacto {
+    font-weight: 188;
+    font-size: 6rem;
+  }
+
+  .display-2--contacto1 {
+    font-weight: 36;
+    font-size: 1.6rem;
+  }
+
+  .display-2--contacto2 {
+    font-weight: 22;
+    font-size: 1.4rem;
+  }
+
+  .linkContacto {
+    font-weight: 22;
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 1099px) {
+  .gatoObservando {
+    height: 10rem;
+    width: 30rem;
+  }
+
+  .display-2--contacto {
+    font-weight: 188;
+    font-size: 3rem;
+  }
+
+  .display-2--contacto1 {
+    font-weight: 36;
+    font-size: 1.3rem;
+  }
+
+  .display-2--contacto2 {
+    font-weight: 22;
+    font-size: 1rem;
+  }
+
+  .linkContacto {
+    font-weight: 22;
+    font-size: 1.2rem;
+  }
+
+  .nav-link3 {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 768px) {
+  .gatoObservando {
+    height: 6rem;
+    width: 16rem;
+  }
+
+  .display-2--contacto {
+    font-weight: 188;
+    font-size: 1.5rem;
+  }
+
+  .display-2--contacto1 {
+    font-weight: 36rem;
+    font-size: 1rem;
+  }
+
+  .display-2--contacto2 {
+    font-weight: 22;
+    font-size: 0.6rem;
+  }
+
+  .linkContacto {
+    font-weight: 22;
+    font-size: 0.8rem;
+  }
+
+  .nav-link3 {
+    font-size: 1.2rem;
+  }
+}
+.display-2--galeria {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 36rem;
+  font-size: 1.6rem;
+  color: white;
+}
+
+.galeria1 {
+  width: 1100;
+  height: 500;
+}
+
+.galeria2 {
+  width: 1100;
+  height: 500;
+}
+
+.galeria3 {
+  width: 1100;
+  height: 500;
+}
+
+@media (min-width: 1100px) {
+  .display-2--galeria {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 1099px) {
+  .display-2--galeria {
+    font-size: 1.4rem;
+  }
+
+  .galeria1 {
+    width: 40rem;
+    height: 20rem;
+  }
+
+  .galeria2 {
+    width: 40rem;
+    height: 20rem;
+  }
+
+  .galeria3 {
+    width: 40rem;
+    height: 20rem;
+  }
+}
+@media (max-width: 768px) {
+  .display-2--galeria {
+    font-size: 1rem;
+  }
+
+  .galeria1 {
+    width: 24rem;
+    height: 20rem;
+  }
+
+  .galeria2 {
+    width: 24rem;
+    height: 20rem;
+  }
+
+  .galeria3 {
+    width: 24rem;
+    height: 20rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

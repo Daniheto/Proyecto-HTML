@@ -1,0 +1,331 @@
+.colorHistoria {
+  background-image: linear-gradient(
+    to right top,
+    #06142a,
+    #01193b,
+    #001c4b,
+    #041f5c,
+    #15206b
+  );
+}
+.navbar1 {
+  background-image: linear-gradient(
+    to right top,
+    #06142a,
+    #01193b,
+    #001c4b,
+    #041f5c,
+    #15206b
+  );
+  position: relative;
+  display: flex;
+  flex-wrap: wrap; // allow us to do the line break for collapsing content
+  align-items: center;
+  justify-content: space-between; // space out brand from logo
+  padding-top: $navbar-padding-y;
+  padding-right: $navbar-padding-x; // default: null
+  padding-bottom: $navbar-padding-y;
+  padding-left: $navbar-padding-x; // default: null
+  @include gradient-bg();
+}
+.logoHistoria {
+  align-items: center;
+  padding-left: 11px;
+  display: flexbox;
+}
+.nav-link3 {
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 23;
+  margin: 60px;
+  text-decoration: none;
+  align-items: center;
+  display: inline-block;
+  padding-right: 2rem;
+}
+
+.display-2--historia {
+  font-family: "Elsie Swash Caps", cursive;
+  font-weight: 700;
+  font-size: 5rem;
+  color: white;
+}
+.display-2--historia1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 48;
+  font-size: 3rem;
+  color: white;
+}
+.display-2--historia2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 30;
+  font-size: 1rem;
+  color: white;
+}
+.display-2--historia3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 42;
+  font-size: 3rem;
+  color: white;
+}
+.display-2--historia4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 42;
+  font-size: 2rem;
+  color: white;
+}
+.display-2--historia5 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 42;
+  font-size: 2rem;
+  color: white;
+  align-items: center;
+  padding-left: 15%;
+}
+.display-2--historia6 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 42;
+  font-size: 2rem;
+  color: white;
+  align-items: center;
+  padding-left: 25%;
+}
+.display-2--historia7 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 42;
+  font-size: 2rem;
+  color: white;
+  align-items: center;
+  padding-left: 35%;
+}
+.display-2--historia8 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 42;
+  font-size: 2rem;
+  color: white;
+  align-items: center;
+}
+.display-2--historia9 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 24;
+  font-size: 0.8rem;
+  color: white;
+  text-align: center;
+}
+.display-2--historia10 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 24;
+  font-size: 0.8rem;
+  color: white;
+  text-align: center;
+}
+
+.foto {
+  height: 400px;
+  width: 400px;
+  border-radius: 200px;
+}
+.gatoAgazapado {
+  height: 20rem;
+  width: 40rem;
+}
+.gatoVentana {
+  height: 40rem;
+  width: 60rem;
+}
+.repisa {
+  height: 12rem;
+  width: 32rem;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 2%;
+  grid-row-gap: 40px;
+}
+
+.gridItem1 {
+  align-items: initial;
+  margin-left: 1rem;
+}
+.gridItem2 {
+  text-align-last: right;
+  padding-right: 1rem;
+}
+.gridItem3 {
+  padding-left: initial;
+  padding-top: 1rem;
+}
+.gridItem4 {
+  text-align-last: right;
+  padding-right: 1rem;
+}
+.gridItem7 {
+  align-items: center;
+}
+.gridItem9 {
+  text-align-last: right;
+}
+.gridItem10 {
+  padding-left: initial;
+  padding-top: 1rem;
+}
+@media (min-width: 1100px) {
+  .display-2--historia {
+    font-size: 5rem;
+  }
+  .display-2--historia1 {
+    font-size: 3rem;
+  }
+  .display-2--historia2 {
+    font-size: 1rem;
+  }
+  .display-2--historia3 {
+    font-size: 3rem;
+  }
+  .display-2--historia4 {
+    font-size: 2rem;
+  }
+  .display-2--historia5 {
+    font-size: 2rem;
+  }
+  .display-2--historia6 {
+    font-size: 2rem;
+  }
+  .display-2--historia7 {
+    font-size: 2rem;
+  }
+  .display-2--historia8 {
+    font-size: 2rem;
+  }
+  .display-2--historia9 {
+    font-size: 0.8rem;
+  }
+  .display-2--historia10 {
+    font-size: 0.8rem;
+  }
+  .foto {
+    height: 400px;
+    width: 400px;
+    border-radius: 200px;
+  }
+  .gatoAgazapado {
+    height: 20rem;
+    width: 40rem;
+  }
+  .gatoVentana {
+    height: 40rem;
+    width: 60rem;
+  }
+  .repisa {
+    height: 12rem;
+    width: 32rem;
+  }
+}
+@media (max-width: 1099px) {
+  .display-2--historia {
+    font-size: 2.5rem;
+  }
+  .display-2--historia1 {
+    font-size: 1.5rem;
+  }
+  .display-2--historia2 {
+    font-size: 0.8rem;
+  }
+  .display-2--historia3 {
+    font-size: 1.5rem;
+  }
+  .display-2--historia4 {
+    font-size: 1rem;
+  }
+  .display-2--historia5 {
+    font-size: 1rem;
+  }
+  .display-2--historia6 {
+    font-size: 1rem;
+  }
+  .display-2--historia7 {
+    font-size: 1rem;
+  }
+  .display-2--historia8 {
+    font-size: 1rem;
+  }
+  .display-2--historia9 {
+    font-size: 0.8rem;
+  }
+  .display-2--historia10 {
+    font-size: 0.8rem;
+  }
+  .foto {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+  }
+  .gatoAgazapado {
+    height: 10rem;
+    width: 20rem;
+  }
+  .gatoVentana {
+    height: 18rem;
+    width: 28rem;
+  }
+  .repisa {
+    height: 8rem;
+    width: 20rem;
+  }
+}
+@media (max-width: 768px) {
+  .display-2--historia {
+    font-size: 2.5rem;
+  }
+  .display-2--historia1 {
+    font-size: 1.5rem;
+  }
+  .display-2--historia2 {
+    font-size: 0.8rem;
+  }
+  .display-2--historia3 {
+    font-size: 1.5rem;
+  }
+  .display-2--historia4 {
+    font-size: 1rem;
+  }
+  .display-2--historia5 {
+    font-size: 1rem;
+  }
+  .display-2--historia6 {
+    font-size: 1rem;
+  }
+  .display-2--historia7 {
+    font-size: 1rem;
+  }
+  .display-2--historia8 {
+    font-size: 1rem;
+  }
+  .display-2--historia9 {
+    font-size: 0.8rem;
+  }
+  .display-2--historia10 {
+    font-size: 0.8rem;
+  }
+  .foto {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+  }
+  .gatoAgazapado {
+    height: 10rem;
+    width: 20rem;
+  }
+  .gatoVentana {
+    height: 16rem;
+    width: 26rem;
+  }
+  .repisa {
+    height: 10rem;
+    width: 30rem;
+  }
+}
