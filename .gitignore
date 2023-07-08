@@ -1,4 +1,4 @@
 .sass-cache
-node_modules/
-.idea/
-dist/
+/node_modules
+.idea
+/dist
